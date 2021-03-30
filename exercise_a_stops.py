@@ -40,6 +40,9 @@ rever_order = sorted(stops, reverse = True)
 print(rever_order)
 
 for stop in stops:
+    print(stop)
+
+
     
 
 
