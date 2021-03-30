@@ -75,8 +75,25 @@ pet_species = users["Avril"]["pets"][0]["species"]
 print(pet_species)
 
 # 5. Get the smallest of Erik's lottery numbers
+
+smallest_num = users["Erik"]["lottery_numbers"][2]
+print(smallest_num)
+
 # 6. Return an array of Avril's lottery numbers that are even
+
+
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
+
+users["Erik"]["lottery_numbers"].append(7)
+print(users["Erik"]["lottery_numbers"])
+
 # 8. Change Erik's hometown to Edinburgh
+
+new_home = users["Erik"]["home_town"] = "Edinburgh"
+print(new_home)
+
 # 9. Add a pet dog to Erik called "Fluffy"
+
+new_pet = users["Erik"]["Pets"]
+
 # 10. Add another person to the users dictionary
