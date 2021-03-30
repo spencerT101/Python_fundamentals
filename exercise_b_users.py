@@ -94,6 +94,13 @@ print(new_home)
 
 # 9. Add a pet dog to Erik called "Fluffy"
 
-new_pet = users["Erik"]["Pets"]
+# new_pet_name = users["Erik"]["pets"]
+#new_pet_species = users["Erik"]["pets"]["species"] = "dog"
+
+print["Erik"]["pets"]
+
+print(users["Erik"]["pets"])
 
 # 10. Add another person to the users dictionary
+
+
