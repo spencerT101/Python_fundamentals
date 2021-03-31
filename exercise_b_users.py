@@ -76,16 +76,26 @@ print(pet_species)
 
 # 5. Get the smallest of Erik's lottery numbers
 
-smallest_num = users["Erik"]["lottery_numbers"][2]
-print(smallest_num)
+lowest_lotto = sorted(users["Erik"]["lottery_numbers"])[0]
+print(lowest_lotto)
+
+# - SORTED function sorts data numerically or alphabetically.
+# - lotto numbers will be in numerical order 
+#  - index of [0] is added out side of brackets to get first number in list.
 
 # 6. Return an array of Avril's lottery numbers that are even
 
+lottery_numbers = users["Erik"]["lottery_numbers"] #variable 
+even_numbers = []                                  # create list
+for number in lottery_numbers:                     # create & define FOR loop to go through lottery_numbers list.
+  if number % 2 == 0:                              # if statement to extract even numbers
+     even_numbers.append(number)             # append even (number) to list
 
+print(even_numbers)
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 
-users["Erik"]["lottery_numbers"].append(7)
-print(users["Erik"]["lottery_numbers"])
+#users["Erik"]["lottery_numbers"].append(7)
+#print(users["Erik"]["lottery_numbers"])
 
 # 8. Change Erik's hometown to Edinburgh
 
@@ -94,12 +104,12 @@ print(new_home)
 
 # 9. Add a pet dog to Erik called "Fluffy"
 
-# new_pet_name = users["Erik"]["pets"]
+# new_pet_name = users.append[{"Erik"}]["pets"] = [{}]
 #new_pet_species = users["Erik"]["pets"]["species"] = "dog"
 
-print["Erik"]["pets"]
+#print["Erik"]["pets"]
 
-print(users["Erik"]["pets"])
+#print(users["Erik"]["pets"])
 
 # 10. Add another person to the users dictionary
 
