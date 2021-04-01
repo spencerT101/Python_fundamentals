@@ -94,8 +94,11 @@ for number in lottery_numbers:                     # create & define FOR loop to
 print(even_numbers)
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 
-#users["Erik"]["lottery_numbers"].append(7)
-#print(users["Erik"]["lottery_numbers"])
+users["Erik"]["lottery_numbers"].append(7)
+
+lotto_append = users["Erik"]["lottery_numbers"]
+
+print(lotto_append)
 
 # 8. Change Erik's hometown to Edinburgh
 
@@ -104,13 +107,31 @@ print(new_home)
 
 # 9. Add a pet dog to Erik called "Fluffy"
 
-# new_pet_name = users.append[{"Erik"}]["pets"] = [{}]
-#new_pet_species = users["Erik"]["pets"]["species"] = "dog"
+# use {} to append to dictionary.
 
-#print["Erik"]["pets"]
+users["Erik"]["pets"].append({"name": "Fluffy","species": "dog"})
 
-#print(users["Erik"]["pets"])
+new_pet_name = users["Erik"]["pets"][4]
+
+print(new_pet_name)
+
+
 
 # 10. Add another person to the users dictionary
 
+# write new object with KEY to add to dictionary.
 
+users["Craig"]= {
+    "twitter": "craigster",
+    "lottery_numbers": [9, 33, 6, 40, 22, 18],
+    "home_town": "Royston",
+    "pets": [
+      {
+        "name": "Guiness",
+        "species": "dog"
+      }
+    ]
+}
+
+
+print(users["Craig"])
